@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <!-- 1. Write a program that
+a. Store correct password in a JS variable.
+b. Asks user to enter his/her password
+c. Validate the two passwords:
+i. Check if user has entered password. If not, then give
+message “Please enter your password”
+ii. Check if both passwords are same. If they are same,
+show message “Correct! The password you entered
+matches the original password”. Show “Incorrect
+password” otherwise. 
+
+
+correctpasswor="asdfghj123"
+hispassword=prompt("Please enter the password");
+
+if(hispassword===correctpasswor){
+    alert("Correct! The password you entered matches the original password.")
+}
+if(!hispassword){
+    alert("Please enter your password")
+}else{
+    alert("Incorrect password.")
+} -->
+    
+
+
+
+<!-- 2. This if/else statement does not work. Try to fix it:
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+else
+greeting = "Good evening";
+}
+
+
+
+
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+console.log(greeting)
+}
+else{
+    greeting = "Good evening";
+    console.log(greeting);
+} -->
+
+<!-- 3. Arrays
+a. Declare an empty array using JS literal notation to store
+student names in future.
+b. Declare an empty array using JS object notation to store
+student names in future.
+c. Declare and initialize a strings array.
+d. Declare and initialize a numbers array.
+e. Declare and initialize a boolean array.
+f. Declare and initialize a mixed array.
+g. Declare and Initialize an array and store available education
+qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM,
+MS, M. Phil., PhD). 
+
+
+
+var emptyarray=[];
+
+var studentnames{
+    students=[]
+}
+
+stringarr=["ab","cd","ef"]
+
+numarr=[2,4,6,]
+
+boolarr=[true,false]
+
+mixedarr=["ab",2,3,"we"]
+
+eduarr=["SSC","HSC","BCS","BS","BCOM","MS","M.PHIL","PHD"] -->
+
+
+
+
+
+<!-- 4.
+var colorArray = ["Red", "Green", "Blue"];
+document.write("<b>Original Array:</b> " + colorArray.join(", ") + "<br><br>");
+var colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
+colorArray.unshift(colorToAddAtBeginning);
+document.write("<b>Array after adding color to the beginning:</b> " + colorArray.join(", ") + "<br><br>");
+var colorToAddAtEnd = prompt("Enter a color to add to the end:");
+colorArray.push(colorToAddAtEnd);
+document.write("<b>Array after adding color to the end:</b> " + colorArray.join(", ") + "<br><br>");
+colorArray.unshift("Purple", "Yellow");
+document.write("<b>Array after adding two more colors to the beginning:</b> " + colorArray.join(", ") + "<br><br>");
+colorArray.shift();
+document.write("<b>Array after deleting the first color:</b> " + colorArray.join(", ") + "<br><br>");
+colorArray.pop();
+document.write("<b>Array after deleting the last color:</b> " + colorArray.join(", ") + "<br><br>");
+var indexToAddColor = parseInt(prompt("Enter the index to add color:"));
+var colorToAdd = prompt("Enter the color to add:");
+colorArray.splice(indexToAddColor, 0, colorToAdd);
+document.write("<b>Array after adding color to desired position/index:</b> " + colorArray.join(", ") + "<br><br>");
+var indexToDeleteColor = parseInt(prompt("Enter the index to delete color(s):"));
+var numberOfColorsToDelete = parseInt(prompt("Enter the number of colors to delete:"));
+colorArray.splice(indexToDeleteColor, numberOfColorsToDelete);
+document.write("<b>Array after deleting color(s) from user-defined position/index:</b> " + colorArray.join(", ")); -->
+
+
+
+<!-- 5.
+
+var studentScores = [90, 75, 80, 95, 85];
+
+studentScores.sort();
+
+console.log(studentScores); -->
+
+
+<!-- 6.
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+document.write("<select>");
+for (var i = 0; i < phoneManufacturers.length; i++) {
+    document.write("<option value='" + phoneManufacturers[i] + "'>" + phoneManufacturers[i] + "</option>");
+}
+document.write("</select>"); -->
+
+<!-- 
+7..
+var tableNumber = parseInt(prompt("Enter the number for multiplication table:"));
+var tableLength = parseInt(prompt("Enter the length of the multiplication table:"));
+
+for (var i = 1; i <= tableLength; i++) {
+    var result = tableNumber * i;
+    console.log(tableNumber + " * " + i + " = " + result);
+} -->
+
+
+<!-- 8..
+document.write("<b>Counting:</b> ");
+for (var i = 1; i <= 15; i++) {
+    document.write(i + ", ");
+}
+
+document.write("<br>");
+
+document.write("<b>Reverse counting:</b> ");
+for (var i = 10; i >= 1; i--) {
+    document.write(i + ", ");
+}
+
+document.write("<br>");
+
+document.write("<b>Even:</b> ");
+for (var i = 0; i <= 20; i += 2) {
+    document.write(i + ", ");
+}
+
+document.write("<br>");
+
+document.write("<b>Odd:</b> ");
+for (var i = 1; i <= 19; i += 2) {
+    document.write(i + ", ");
+}
+
+document.write("<br>");
+
+document.write("<b>Series:</b> ");
+for (var i = 2; i <= 20; i += 2) {
+    document.write(i + "k, ");
+} -->
+
+
+<!-- 9..
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+var userInput = prompt("Enter an item to search:");
+
+var found = false;
+for (var i = 0; i < A.length; i++) {
+    if (A[i] === userInput) {
+        found = true;
+        break;
+    }
+}
+
+if (found) {
+    alert("Yes, the item is found in the list.");
+} else {
+    alert("No, the item is not found in the list.");
+} -->
+
+<!-- 10..
+var userInput = prompt("Enter a string:");
+var titleCaseString = userInput.toLowerCase().split(' ').map(function(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}).join(' ');
+
+alert("Title Case: " + titleCaseString); -->
+
+<!-- 11.
+var userInput = prompt("Enter a string:");
+var capitalLetters = userInput.toUpperCase();
+alert("Capitalized String: " + capitalLetters); -->
+
+<!-- 
+12.
+var stringNumber = "472";
+var convertedNumber = parseInt(stringNumber);
+
+document.write("Value: " + convertedNumber + "<br>");
+document.write("Type: " + typeof convertedNumber); -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="pr.js"></script>
+</body>
+</html>
